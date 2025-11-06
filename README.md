@@ -100,8 +100,7 @@ STEP 5:Include Necessary parameters in each functions.
 
 
 ```
-
-``` numeric_df = df.select_dtypes(include=['float64', 'int64'])
+ numeric_df = df.select_dtypes(include=['float64', 'int64'])
  corr_matrix = numeric_df.corr()
  sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
  plt.title('Heatmap of Titanic Dataset')
